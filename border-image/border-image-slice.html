@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="border-image-slice.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="btn-row-0">
+    <div>Used inline SVG:</div>
+    <div class="image"></div>
+  </div>
+  <div class="btn-row-1">
+    <button class="my-button filled">Button text</button>
+    <button class="my-button filled">
+      <span class="button-text">Button text with icon</span>
+      <span class="icon circle"></span>
+    </button>
+    <button class="my-button filled">
+      <span class="icon arrow-back"></span>
+      <span class="button-text">Button text with icon</span>
+    </button>
+    <button class="my-button filled">
+      <span class="icon circle"></span>
+    </button>
+  </div>
+  <div class="btn-row-2">
+    <button class="my-button border">Button text</button>
+    <button class="my-button border">
+      <span class="button-text">Button text with icon</span>
+      <span class="icon circle"></span>
+    </button>
+    <button class="my-button border">
+      <span class="icon arrow-forward"></span>
+      <span class="button-text">Button text with icon</span>
+    </button>
+    <button class="my-button border">
+      <span class="icon square"></span>
+    </button>
+  </div>
+  <div class="btn-row-3">
+    <button class="my-button filled red">Button text</button>
+    <button class="my-button filled red">
+      <span class="button-text">Button text with icon</span>
+      <span class="icon circle"></span>
+    </button>
+    <button class="my-button filled red">
+      <span class="icon arrow-up"></span>
+      <span class="button-text">Button text with icon</span>
+    </button>
+    <button class="my-button filled red">
+      <span class="icon diamond"></span>
+    </button>
+  </div>
+  <div class="btn-row-4">
+    <button class="my-button border red">Button text</button>
+    <button class="my-button border red">
+      <span class="button-text">Button text with icon</span>
+      <span class="icon circle"></span>
+    </button>
+    <button class="my-button border red">
+      <span class="icon arrow-up"></span>
+      <span class="button-text">Button text with icon</span>
+    </button>
+    <button class="my-button border red">
+      <span class="icon diamond"></span>
+    </button>
+  </div>
+  <div class="btn-row-5">
+    <button class="my-button filled teal">Button text</button>
+    <button class="my-button filled teal">
+      <span class="button-text">Button text with icon</span>
+      <span class="icon circle"></span>
+    </button>
+    <button class="my-button filled teal">
+      <span class="icon arrow-up"></span>
+      <span class="button-text">Button text with icon</span>
+    </button>
+    <button class="my-button filled teal">
+      <span class="icon diamond"></span>
+    </button>
+  </div>
+  <div class="btn-row-6">
+    <button class="my-button border teal">Button text</button>
+    <button class="my-button border teal">
+      <span class="button-text">Button text with icon</span>
+      <span class="icon circle"></span>
+    </button>
+    <button class="my-button border teal">
+      <span class="icon arrow-up"></span>
+      <span class="button-text">Button text with icon</span>
+    </button>
+    <button class="my-button border teal">
+      <span class="icon diamond"></span>
+    </button>
+  </div>
+  <div class="btn-row-last">
+    <button class="my-button filled">Lorem ipsum dolor sit amet</button>
+    <button class="my-button border max-125">Lorem ipsum dolor sit amet</button>
+    <button class="my-button filled teal max-125">
+      <span class="button-text">Lorem ipsum dolor sit amet</span>
+      <span class="icon arrow-back"></span>
+    </button>
+    <button class="my-button filled red max-125 icon-inline">
+      <span class="button-text">Lorem ipsum dolor sit amet</span>
+      <span class="icon arrow-forward"></span>
+    </button>
+    <button class="my-button border red max-125 icon-inline">
+      <span class="icon arrow-back"></span>
+      <span class="button-text">Lorem ipsum dolor sit amet</span>
+    </button>
+  </div>
+  <script>
+    var buttons =  document.getElementsByClassName('my-button');
+    Array.prototype.forEach.call(buttons, function(button) {
+      button.addEventListener('click', onClick);
+    })
+    
+    function onClick(e) {
+      var button = e.target.classList.contains('my-button') ? e.target : e.target.parentElement
+      button.classList.add("blink");
+      setTimeout(stopBlinking.bind(null, button), 2000);
+    }
+    function stopBlinking(button) {
+      button.classList.remove('blink');
+    }
+  </script>
+</body>
+</html>
