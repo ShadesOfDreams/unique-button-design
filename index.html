@@ -4,26 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
-
-  <style>
-    body{
-      font-family: sans-serif;
-    }
-  </style>
 </head>
 
 <body>
-  <h3>
-    <a href="./border-image/border-image-slice.html">
-      <code>border-image</code>
-    </a>
-  </h3>
-  <h3>
-    <a href="./border-image-inline-svg/border-image-slice.html">
-      <code>border-image</code>
-      <span>(inline svg)</span>
-    </a>
-  </h3>
+  <div class="main-content">
+    <h3 class="title">Choose a solution:</h3>
+    
+    <div class="fieldset-parent">
+      <fieldset>
+        <legend>border-image with SVG</legend>
+        <div>
+          <a href="./border-image/border-image-slice.html">
+            <code>border-image</code>
+            <span class="description">(IE compatible)</span>
+          </a>
+        </div>
+        <div>
+          <a href="./border-image-inline-svg/border-image-slice.html">
+            <code>border-image</code>
+            <span class="description">(inline SVG)</span>
+          </a>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>border-image with PNG</legend>
+        <div>
+          <a href="">
+            <code>border-image</code>
+            <span class="description">(PNG)</span>
+          </a>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Pseudo and background</legend>
+        <div>
+          <a href="">
+            <code>pseudo-background</code>
+          </a>
+        </div>
+      </fieldset>
+
+      <fieldset>
+          <legend>Font as background</legend>
+          <div>
+            <a href="">
+              <code>font-background</code>
+            </a>
+          </div>
+        </fieldset>
+    </div>
+  </div>
 </body>
 </html>

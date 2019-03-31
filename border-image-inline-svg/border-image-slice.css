@@ -113,7 +113,8 @@
 }
 
 .image {
-  background: url("data:image/svg+xml,data:image/svg+xml;utf8,%253Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='52px' height='52px' viewBox='0 0 52 52' enable-background='new 0 0 52 52' xml:space='preserve'%253E%253Cg%253E%253Cpath style='fill: black' d='M51.417,26c0,16.781-5.252,25.417-11.73,25.417H26H12.314C5.835,51.417,0.583,42.781,0.583,26 c0-16.782,5.252-25.417,11.731-25.417H26h13.687C46.164,0.583,51.417,9.218,51.417,26z'/%253E%253C/g%253E%253C/svg%253E");
+  background-image: url(./assets/button_filled.svg);
+  background-repeat: no-repeat;
   width: 52px;
   height: 52px;
   background-repeat: no-repeat;
@@ -170,4 +171,3 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-/*# sourceMappingURL=border-image-slice.css.map */

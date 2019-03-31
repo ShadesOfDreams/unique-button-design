@@ -113,7 +113,7 @@
 }
 
 .image {
-  border-image-source: url(./assets/button_filled.svg);
+  background-image: url(./assets/button_filled.svg);
   width: 52px;
   height: 52px;
   background-repeat: no-repeat;
@@ -170,4 +170,3 @@
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-/*# sourceMappingURL=border-image-slice.css.map */
