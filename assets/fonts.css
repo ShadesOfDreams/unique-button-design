@@ -1,0 +1,63 @@
+.icon.loading-1::before {
+  content: '\E830';
+}
+
+.icon.loading-2::before {
+  content: '\E831';
+}
+
+.icon.loading-3::before {
+  content: '\E832';
+}
+
+.icon.loading-4::before {
+  content: '\E834';
+}
+
+.icon.loading-5::before {
+  content: '\E838';
+}
+
+.icon.loading-6::before {
+  content: '\E839';
+}
+
+.icon.mail-outline::before {
+  content: '\E801';
+}
+
+.icon.mail::before {
+  content: '\F0E0';
+}
+
+.icon.bold-arrow-back::before {
+  content: '\E802';
+}
+
+.icon.bold-arrow-forward::before {
+  content: '\E803';
+}
+
+.icon.bold-arrow-up::before {
+  content: '\E804';
+}
+
+.icon.bold-arrow-downforward::before {
+  content: '\E805';
+}
+
+.icon.chevron-down::before {
+  content: '\E806';
+}
+
+.icon.chevron-left::before {
+  content: '\E807';
+}
+
+.icon.chevron-right::before {
+  content: '\E808';
+}
+
+.icon.chevron-up::before {
+  content: '\E809';
+}

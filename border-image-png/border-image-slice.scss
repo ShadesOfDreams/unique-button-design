@@ -42,28 +42,28 @@
   /* button type: FILLED */
   &.filled{
     color: white;
-    border-image-source:url(./assets/button_filled.svg);
+    border-image-source:url(./assets/button_filled.png);
 
     &.red{
-    border-image-source:url(./assets/button_filled_red.svg);
+    border-image-source:url(./assets/button_filled_red.png);
     color:white;
     }
     &.teal {
-    border-image-source:url(./assets/button_filled_teal.svg);
+    border-image-source:url(./assets/button_filled_teal.png);
        color: white;
     }
   }
   
   /* button type: BORDER */
   &.border{
-    border-image-source:url(./assets/button_line.svg);
+    border-image-source:url(./assets/button_line.png);
 
     &.red {
-      border-image-source:url(./assets/button_line_red.svg);
+      border-image-source:url(./assets/button_line_red.png);
     color: red;
     }
     &.teal {
-      border-image-source:url(./assets/button_line_teal.svg);
+      border-image-source:url(./assets/button_line_teal.png);
       color: teal;
     }
   }
@@ -107,7 +107,7 @@
 }
 
 .image{
-  background-image: url(./assets/button_filled.svg);
+  background-image: url(./assets/button_filled.png);
   width: 52px;
   height: 52px;
   background-repeat: no-repeat;

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: button-font;
+  src: url(./assets/font/button-font.ttf);
+}
+
+.my-button {
+  border: none;
+  background-color: transparent;
+  min-height: 52px;
+  min-width: 52px;
+  position: relative;
+}
+
+.my-button::after {
+  font-family: button-font;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  font-stretch: 100%;
+}
+
+.my-button.filled::after {
+  content: '\E800';
+}
+
+.my-button.border::after {
+  content: '\E801';
+}

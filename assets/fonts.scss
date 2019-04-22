@@ -1,0 +1,50 @@
+.icon{
+  &.loading-1::before{
+    content: '\E830';
+  }
+  &.loading-2::before{
+    content: '\E831';
+  }
+  &.loading-3::before{
+    content: '\E832';
+  }
+  &.loading-4::before{
+    content: '\E834';
+  }
+  &.loading-5::before{
+    content: '\E838';
+  }
+  &.loading-6::before{
+    content: '\E839';
+  }
+  &.mail-outline::before{
+    content: '\E801';
+  }
+  &.mail::before{
+    content: '\F0E0';
+  }
+  &.bold-arrow-back::before{
+    content: '\E802';
+  }
+  &.bold-arrow-forward::before{
+    content: '\E803';
+  }
+  &.bold-arrow-up::before{
+    content: '\E804';
+  }
+  &.bold-arrow-downforward::before{
+    content: '\E805';
+  }
+  &.chevron-down::before{
+    content: '\E806';
+  }
+  &.chevron-left::before{
+    content: '\E807';
+  }
+  &.chevron-right::before{
+    content: '\E808';
+  }
+  &.chevron-up::before{
+    content: '\E809';
+  }
+}

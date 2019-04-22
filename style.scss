@@ -1,0 +1,43 @@
+body{
+  font-family: sans-serif;
+  background-color: #222222;
+  color: lightblue;
+
+  a,
+  a:visited,
+  a:hover,
+  a:link {
+    color: rgb(79, 211, 255);
+    text-decoration: none;
+  }
+
+  .description {
+    font-size: 10pt;
+    opacity: 0.6;
+  }
+
+  .main-content{
+    margin: 30px auto;
+    width: 90vw;
+    max-width: 650px;
+    max-height: 90vh;
+    box-shadow: 0 0 15px rgba($color: #000000, $alpha: 0.5);
+    padding: 1em;
+    background-color: #363636;
+    border-radius: 10px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .title {
+      margin-bottom: 25px;
+    }
+
+    fieldset {
+      border-radius: 5px;
+     
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
